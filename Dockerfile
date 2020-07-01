@@ -20,7 +20,7 @@ ENV chiselserver = ''
 #This could be an Nginx reverse proxy with ssl termination or some other container or webapp in unraid.
 ENV unraid_resource = ''
 
-#Port on the unraid_resource that is recieving the requests.
+#Port on the unraid_resource that is receiving the requests.
 ENV unraid_resource_port = '' 
 
 #Enable verbose output
@@ -30,4 +30,4 @@ ENV verbose='-v'
 ENV local_container_port='3000'
 
 #Run the chisel client in reverse proxy mode when conecting to the server.
-CMD [ "chisel", ${mode}, $(verbose), ${chiselserver}, ${reverse_flag}":"${local_container_port}":"${unraid_resource}":"${unraid_resource_port}]
+CMD [ "chisel", "${mode}", "${verbose}", "${chiselserver}", "${reverse_flag}"":""${local_container_port}"":""${unraid_resource}"":""${unraid_resource_port}"]
