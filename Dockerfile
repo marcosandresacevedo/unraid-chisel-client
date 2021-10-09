@@ -19,8 +19,8 @@ ENV reverse_flag = 'R'
 #For use in client mode.
 ENV chisel_server = ''
 
-#Port of the chisel server that will recieve the connection from the client to establish a tunnel.
-#Defined when executing chisel server on the cloud instance or VM. Defaults to 8080 ons erver if not specified. 
+#Port of the chisel server that will receive the connection from the client to establish a tunnel.
+#Defined when executing chisel server on the cloud instance or VM. Defaults to 8080 on the server if not specified. 
 #You must configure the proper firewall rules in your cloud provider.
 ENV chisel_server_port = '8080'
 
